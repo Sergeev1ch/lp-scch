@@ -125,9 +125,14 @@ a.active{
 .dep-list{
 	flex-wrap: wrap;
 }
+.dep-item img{
+	width: 100%;
+}
 .dep-item{
+	background-color: #FBF7F8;
 	width: 30%;
-	padding-bottom: 5%;
+	margin-bottom: 5%;
+	border-bottom: 3px solid #009BAD;
 }
 .dep-item h5{
 	padding-top: 5%;
