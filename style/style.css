@@ -1,0 +1,195 @@
+body, h1, h2, h5, h6{
+	font-family: 'Balsamiq Sans', cursive;
+}
+h1{
+	font-size: 4em;
+}
+h2{
+	font-size: 2.5em;
+}
+h5{
+	font-size: 1.5em;
+}
+h6{
+	font-size: 1em;
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	background-color: #009BAD;
+	border-bottom: 1px solid grey;
+	padding-right: 10%;
+	padding-left: 10%;
+	z-index: 1000;
+}
+.logo{
+	width: 30%;
+}
+.logo img{
+	width: 20%;
+}
+.nav{
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1%;
+	padding-bottom: 1%; 
+}
+.nav a{
+	color: #99D7DE;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.nav a:hover{
+	color: white;
+}
+.main{
+	height: 100%;
+	width: 100%;
+	padding-right: 10%;
+	padding-left: 10%;
+	background-color: #009BAD;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 7%;
+	padding-bottom: 4%;
+}
+.main-text h1{
+	color: white;
+	font-weight: bold;
+}
+.feat, .depart, .about, .team, .gallery, .contacts{
+	padding: 5% 10%;
+}
+.feat, .depart, .team, .gallery, .contacts{
+	text-align: center;
+}
+.feat h2, .depart h2, .team h2, .gallery h2, .contacts h2{
+	font-weight: bold;
+}
+.f-list{
+	margin-top: 4%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center; 
+}
+.list-item{
+	width: 30%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.list-item h5{
+	font-weight: bold;
+}
+.about{
+	background-color: #F7F9FB;
+	display: flex;
+	align-items: center;
+}
+.about-img{
+	padding-left: 5%;
+}
+.about-text h2, .about-text h5{
+	font-weight: bold;
+}
+.about-item{
+	padding-top: 3%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about-item i{
+	text-align: center;
+	width: 15%;
+	font-size: 2.5em;
+}
+a.active{
+	color: white;
+}
+.depart{
+	padding-bottom: 0;
+}
+.dep-list{
+	margin-top: 5%; 
+	display: flex;
+	justify-content: space-between;
+}
+.dep-list{
+	flex-wrap: wrap;
+}
+.dep-item{
+	width: 30%;
+	padding-bottom: 5%;
+}
+.dep-item h5{
+	padding-top: 5%;
+	font-weight: bold;
+}
+.dep-item h6{
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.team{
+	background-color: #F7F9FB;
+}
+.team-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.team-item{
+	margin-top: 5%; 
+	width: 45%;
+	display: flex;
+	text-align: left;
+}
+.team-item img{
+	width: 50%;
+	margin-right: 4%; 
+}
+#slider{
+	margin-top: 5%; 
+}
+.contacts{
+	background-color: #009BAD;
+	flex-wrap: wrap;
+}
+.contacts h2{
+	color: white;
+	margin-bottom: 5%; 
+}
+.map{
+	display: flex; 
+	justify-content: space-between;
+}
+.cont-text{
+	text-align: left;
+	color: white;
+	white-space: nowrap;
+}
+.cont-text i{
+	width: 20%;
+}
+.links{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+.links a{
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+}
+.links a:hover{
+	color: black;
+}
