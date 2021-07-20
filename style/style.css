@@ -95,7 +95,7 @@ h6{
 	align-items: center;
 }
 .about-img{
-	padding-left: 5%;
+	margin-left: 5%;
 }
 .about-text h2, .about-text h5{
 	font-weight: bold;
@@ -158,7 +158,8 @@ a.active{
 }
 .team-item img{
 	width: 50%;
-	margin-right: 4%; 
+	margin-right: 4%;
+	border: 1px solid #009BAD; 
 }
 #slider{
 	margin-top: 5%; 
