@@ -447,6 +447,12 @@ a.active{
 	.burger{
 		visibility: visible;
 	}
+	.burger-menu a{
+		font-size: 1.5em; 
+	}
+	.burger-menu{
+		margin-top: 15%;
+	}
 	.nav a{
 		font-size: 0.1em;
 	}
