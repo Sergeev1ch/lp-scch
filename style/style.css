@@ -439,7 +439,7 @@ a.active{
 		flex-direction: row;
 	}
 	.navbar{
-		height: 8%;
+		height: 10%;
 	}
 	.burger{
 		visibility: visible;
