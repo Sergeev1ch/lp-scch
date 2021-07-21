@@ -36,6 +36,19 @@
 			<a href="#team">Наша команда</a>
 			<a href="#gallery">Галерея</a>
 		</div>
+		<div class="burger">
+				<div></div>
+				<div></div>
+				<div></div>
+		</div>
+	</div>
+	<div class="burger-menu hidden">
+			<a class="active" href="#home">Головна</a>
+			<a href="#features">Особливості</a>
+			<a href="#about">Про нас</a>
+			<a href="#depatrments">Відділення</a>
+			<a href="#team">Наша команда</a>
+			<a href="#gallery">Галерея</a>
 	</div>
 	<div id="home" class=" section main">
 		<div class="main-text">
@@ -231,7 +244,9 @@
 				<h5><i class="fas fa-phone"></i>(06237)72695</h5>
 				<h5><i class="fas fa-envelope"></i>selidovo.cch@gov.ua</h5>
 			</div>
+			<div class="ifr">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.7047744660813!2d37.304506315613715!3d48.13521647922327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40de235e4cb04331%3A0xc3c18d3303e399f4!2z0KbQk9CR!5e0!3m2!1sru!2sua!4v1626769343264!5m2!1sru!2sua" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
 		</div>
 	</div>
 </body>
@@ -295,6 +310,45 @@
 });
 </script>
 <script>
+	jQuery(function($) {
+
+    const section = $('.section'),
+          nav = $('.burger-menu'),
+          navHeight = nav.outerHeight(); 
+    window.addEventListener('orientationchange', function () {
+        navHeight = nav.outerHeight();
+    }, false);
+
+    $(window).on('scroll', function () {
+        const position = $(this).scrollTop();
+
+        section.each(function () {
+            const top = $(this).offset().top - 100 - 5,
+                  bottom = top + $(this).outerHeight();
+
+            if (position >= top && position <= bottom) {
+                nav.find('a').removeClass('active');
+                section.removeClass('active');
+
+                $(this).addClass('active');
+                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+        });
+    });
+
+    nav.find('a').on('click', function () {
+        const id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - 100
+        }, 487);
+
+        return false;
+    });
+
+});
+</script>
+<script>
 	$(document).ready(function(){
     const slider = $("#slider").owlCarousel({
         center: true,
@@ -304,4 +358,14 @@
     });
 });
 </script>
+<script>
+        	$(document).ready(function() {
+    		$('.burger').click(function() {
+        		$('.burger-menu').toggleClass('hidden');
+    		});
+    		$('.burger-menu a').click(function(){
+    			$('.burger-menu').toggleClass('hidden');
+    		})
+			});
+        </script>
 </html>
