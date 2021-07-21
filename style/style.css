@@ -103,8 +103,6 @@ h6{
 .about-item{
 	padding-top: 3%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .about-item i{
 	text-align: center;
