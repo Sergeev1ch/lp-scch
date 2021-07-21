@@ -406,22 +406,22 @@ a.active{
 }
 @media (max-width: 576px){
 	h1{
-		font-size: 2em;
-	}
-	h2{
 		font-size: 1.5em;
 	}
-	h5{
-		font-size: 1em;
+	h2{
+		font-size: 1.2em;
 	}
-	h6{
+	h5{
 		font-size: 0.8em;
 	}
+	h6{
+		font-size: 0.6em;
+	}
 	.main-img img{
-		width: 80%;
+		width: 100%;
 	}
 	.main{
-		padding-top: 12%;
+		padding-top: 25%;
 	}
 	.feat, .depart, .about, .team, .gallery, .contacts{
 		padding: 5% 5%;
@@ -431,10 +431,7 @@ a.active{
 		padding-left: 5%;
 	}
 	.logo{
-		width: 50px;
-	}
-	.logo img{
-		width: 100%;
+		width: 80%;
 	}
 	.nav{
 		visibility: hidden;
@@ -442,7 +439,6 @@ a.active{
 		flex-direction: row;
 	}
 	.navbar{
-		width: 320px;
 		height: 8%;
 	}
 	.burger{
@@ -452,7 +448,7 @@ a.active{
 		font-size: 0.1em;
 	}
 	.map iframe{
-		width: 500px;
+		width: 290px;
 		height: 300px;
 	}
 	.ifr{
@@ -472,7 +468,11 @@ a.active{
 		justify-content: center;
 	}
 	.team-item{
-		width: 70%;
+		width: 100%;
+		margin-top: 10%;
+	}
+	.team-item:first-child{
+		margin-top: 5%;
 	}
 	.map{
 		flex-wrap: wrap;
@@ -490,5 +490,32 @@ a.active{
 		text-align: center;
 		width: 15%;
 		font-size: 1.5em;
+	}
+	.f-list{
+		flex-wrap: wrap;
+	}
+	.list-item:first-child{
+		margin-top: 2%;
+	}
+	.list-item{
+		width: 100%;
+		margin-top: 10%;
+	}
+	.about-text{
+		width: 100%;
+	}
+	.about-img{
+		width: 1px;
+		visibility: hidden;
+	}
+	.dep-list{
+		flex-wrap: wrap;
+	}
+	.dep-item{
+		width: 100%;
+		margin-top: 10%;
+	}
+	.dep-item:first-child{
+		margin-top: 5%;
 	}
 }
