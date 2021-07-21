@@ -199,3 +199,39 @@ a.active{
 .links a:hover{
 	color: black;
 }
+
+@media (min-width: 1200px) and (max-width: 1400px){
+	.feat, .depart, .about, .team, .gallery, .contacts{
+		padding: 5% 5%;
+	}
+	.main, .navbar{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.feat, .depart, .about, .team, .gallery, .contacts{
+		padding: 5% 5%;
+	}
+	.main, .navbar{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.logo{
+		width: 20%;
+	}
+	.nav{
+		width: 80%;
+	}
+	h1{
+		font-size: 3.5em;
+	}
+	.nav a{
+		font-size: 1.3em;
+	}
+	.map iframe{
+		width: 300px;
+		height: 300px;
+	}
+}
