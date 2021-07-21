@@ -7,7 +7,7 @@ app.set('view engine', '.ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'style')));
 app.use(express.static(path.join(__dirname, 'img')));
-app.use(express.static(path.join(__dirname, 'scripts')));
+app.use(express.static(path.join(__dirname, 'js')));
 
 
 const PORT = process.env.PORT || 3000;
