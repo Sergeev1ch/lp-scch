@@ -139,6 +139,7 @@ a.active{
 	font-weight: bold;
 }
 .dep-item h6{
+	text-align: left;
 	padding-right: 5%;
 	padding-left: 5%;
 }
