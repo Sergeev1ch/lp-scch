@@ -405,6 +405,9 @@ a.active{
 	}
 }
 @media (max-width: 576px){
+	p{
+		margin-bottom: 0.5em;
+	}
 	h1{
 		font-size: 1.5em;
 	}
