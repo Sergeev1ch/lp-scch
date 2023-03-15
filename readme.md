@@ -1,3 +1,3 @@
 ### Landing page for Selidovo Central City Hospital
 --- ---
-[Show](https://scch.herokuapp.com)
+[Show](https://guileless-donut-ae36e9.netlify.app)
